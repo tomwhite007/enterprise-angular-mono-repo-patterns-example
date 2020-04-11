@@ -25,6 +25,27 @@
     "booking-booking-desktop-e2e": {
       "tags": [],
       "implicitDependencies": ["booking-booking-desktop"]
+    },
+    "booking-booking-mobile": {
+      "tags": ["scope:booking", "type:app"]
+    },
+    "booking-booking-mobile-e2e": {
+      "tags": [],
+      "implicitDependencies": ["booking-booking-mobile"]
+    },
+    "check-in-check-in-desktop": {
+      "tags": ["scope:check-in", "type:app"]
+    },
+    "check-in-check-in-desktop-e2e": {
+      "tags": [],
+      "implicitDependencies": ["check-in-check-in-desktop"]
+    },
+    "check-in-check-in-mobile": {
+      "tags": ["scope:check-in", "type:app"]
+    },
+    "check-in-check-in-mobile-e2e": {
+      "tags": [],
+      "implicitDependencies": ["check-in-check-in-mobile"]
     }
   }
 }
