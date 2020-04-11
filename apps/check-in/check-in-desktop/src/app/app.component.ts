@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'check-in-check-in-desktop';
+  title = 'check-in-desktop';
 }

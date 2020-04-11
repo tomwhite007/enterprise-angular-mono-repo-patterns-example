@@ -1,7 +1,7 @@
 {
   "version": 1,
   "projects": {
-    "booking-booking-desktop": {
+    "booking-desktop": {
       "projectType": "application",
       "schematics": {
         "@nrwl/angular:component": {
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "booking-booking-desktop:build"
+            "browserTarget": "booking-desktop:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "booking-booking-desktop:build:production"
+              "browserTarget": "booking-desktop:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "booking-booking-desktop:build"
+            "browserTarget": "booking-desktop:build"
           }
         },
         "lint": {
@@ -100,7 +100,7 @@
         }
       }
     },
-    "booking-booking-desktop-e2e": {
+    "booking-desktop-e2e": {
       "root": "apps/booking/booking-desktop-e2e",
       "sourceRoot": "apps/booking/booking-desktop-e2e/src",
       "projectType": "application",
@@ -110,11 +110,11 @@
           "options": {
             "cypressConfig": "apps/booking/booking-desktop-e2e/cypress.json",
             "tsConfig": "apps/booking/booking-desktop-e2e/tsconfig.e2e.json",
-            "devServerTarget": "booking-booking-desktop:serve"
+            "devServerTarget": "booking-desktop:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "booking-booking-desktop:serve:production"
+              "devServerTarget": "booking-desktop:serve:production"
             }
           }
         },
@@ -130,7 +130,7 @@
         }
       }
     },
-    "booking-booking-mobile": {
+    "booking-mobile": {
       "projectType": "application",
       "schematics": {
         "@nrwl/angular:component": {
@@ -191,18 +191,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "booking-booking-mobile:build"
+            "browserTarget": "booking-mobile:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "booking-booking-mobile:build:production"
+              "browserTarget": "booking-mobile:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "booking-booking-mobile:build"
+            "browserTarget": "booking-mobile:build"
           }
         },
         "lint": {
@@ -226,7 +226,7 @@
         }
       }
     },
-    "booking-booking-mobile-e2e": {
+    "booking-mobile-e2e": {
       "root": "apps/booking/booking-mobile-e2e",
       "sourceRoot": "apps/booking/booking-mobile-e2e/src",
       "projectType": "application",
@@ -236,11 +236,11 @@
           "options": {
             "cypressConfig": "apps/booking/booking-mobile-e2e/cypress.json",
             "tsConfig": "apps/booking/booking-mobile-e2e/tsconfig.e2e.json",
-            "devServerTarget": "booking-booking-mobile:serve"
+            "devServerTarget": "booking-mobile:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "booking-booking-mobile:serve:production"
+              "devServerTarget": "booking-mobile:serve:production"
             }
           }
         },
@@ -256,7 +256,7 @@
         }
       }
     },
-    "check-in-check-in-desktop": {
+    "check-in-desktop": {
       "projectType": "application",
       "schematics": {
         "@nrwl/angular:component": {
@@ -317,18 +317,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "check-in-check-in-desktop:build"
+            "browserTarget": "check-in-desktop:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "check-in-check-in-desktop:build:production"
+              "browserTarget": "check-in-desktop:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "check-in-check-in-desktop:build"
+            "browserTarget": "check-in-desktop:build"
           }
         },
         "lint": {
@@ -355,7 +355,7 @@
         }
       }
     },
-    "check-in-check-in-desktop-e2e": {
+    "check-in-desktop-e2e": {
       "root": "apps/check-in/check-in-desktop-e2e",
       "sourceRoot": "apps/check-in/check-in-desktop-e2e/src",
       "projectType": "application",
@@ -365,11 +365,11 @@
           "options": {
             "cypressConfig": "apps/check-in/check-in-desktop-e2e/cypress.json",
             "tsConfig": "apps/check-in/check-in-desktop-e2e/tsconfig.e2e.json",
-            "devServerTarget": "check-in-check-in-desktop:serve"
+            "devServerTarget": "check-in-desktop:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "check-in-check-in-desktop:serve:production"
+              "devServerTarget": "check-in-desktop:serve:production"
             }
           }
         },
@@ -387,7 +387,7 @@
         }
       }
     },
-    "check-in-check-in-mobile": {
+    "check-in-mobile": {
       "projectType": "application",
       "schematics": {
         "@nrwl/angular:component": {
@@ -448,18 +448,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "check-in-check-in-mobile:build"
+            "browserTarget": "check-in-mobile:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "check-in-check-in-mobile:build:production"
+              "browserTarget": "check-in-mobile:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "check-in-check-in-mobile:build"
+            "browserTarget": "check-in-mobile:build"
           }
         },
         "lint": {
@@ -486,7 +486,7 @@
         }
       }
     },
-    "check-in-check-in-mobile-e2e": {
+    "check-in-mobile-e2e": {
       "root": "apps/check-in/check-in-mobile-e2e",
       "sourceRoot": "apps/check-in/check-in-mobile-e2e/src",
       "projectType": "application",
@@ -496,11 +496,11 @@
           "options": {
             "cypressConfig": "apps/check-in/check-in-mobile-e2e/cypress.json",
             "tsConfig": "apps/check-in/check-in-mobile-e2e/tsconfig.e2e.json",
-            "devServerTarget": "check-in-check-in-mobile:serve"
+            "devServerTarget": "check-in-mobile:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "check-in-check-in-mobile:serve:production"
+              "devServerTarget": "check-in-mobile:serve:production"
             }
           }
         },
@@ -513,6 +513,41 @@
               "!apps/check-in/check-in-mobile-e2e/**"
             ]
           }
+        }
+      }
+    },
+    "booking-feature-shell": {
+      "projectType": "library",
+      "root": "libs/booking/booking-feature-shell",
+      "sourceRoot": "libs/booking/booking-feature-shell/src",
+      "prefix": "booking",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/booking-feature-shell/tsconfig.lib.json",
+              "libs/booking/booking-feature-shell/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/booking/booking-feature-shell/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/booking-feature-shell/jest.config.js",
+            "tsConfig": "libs/booking/booking-feature-shell/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/booking/booking-feature-shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
         }
       }
     }
@@ -530,5 +565,5 @@
       "unitTestRunner": "jest"
     }
   },
-  "defaultProject": "booking-booking-desktop"
+  "defaultProject": "booking-desktop"
 }

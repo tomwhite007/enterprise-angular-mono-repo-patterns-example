@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'booking-booking-mobile',
+  name: 'booking-mobile',
   preset: '../../../jest.config.js',
   coverageDirectory: '../../../coverage/apps/booking/booking-mobile',
   snapshotSerializers: [

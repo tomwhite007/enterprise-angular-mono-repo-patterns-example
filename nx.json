@@ -19,33 +19,36 @@
     }
   },
   "projects": {
-    "booking-booking-desktop": {
+    "booking-desktop": {
       "tags": ["scope:booking", "type:app"]
     },
-    "booking-booking-desktop-e2e": {
+    "booking-desktop-e2e": {
       "tags": [],
-      "implicitDependencies": ["booking-booking-desktop"]
+      "implicitDependencies": ["booking-desktop"]
     },
-    "booking-booking-mobile": {
+    "booking-mobile": {
       "tags": ["scope:booking", "type:app"]
     },
-    "booking-booking-mobile-e2e": {
+    "booking-mobile-e2e": {
       "tags": [],
-      "implicitDependencies": ["booking-booking-mobile"]
+      "implicitDependencies": ["booking-mobile"]
     },
-    "check-in-check-in-desktop": {
+    "check-in-desktop": {
       "tags": ["scope:check-in", "type:app"]
     },
-    "check-in-check-in-desktop-e2e": {
+    "check-in-desktop-e2e": {
       "tags": [],
-      "implicitDependencies": ["check-in-check-in-desktop"]
+      "implicitDependencies": ["check-in-desktop"]
     },
-    "check-in-check-in-mobile": {
+    "check-in-mobile": {
       "tags": ["scope:check-in", "type:app"]
     },
-    "check-in-check-in-mobile-e2e": {
+    "check-in-mobile-e2e": {
       "tags": [],
-      "implicitDependencies": ["check-in-check-in-mobile"]
+      "implicitDependencies": ["check-in-mobile"]
+    },
+    "booking-feature-shell": {
+      "tags": ["scope:booking", "type:feature"]
     }
   }
 }

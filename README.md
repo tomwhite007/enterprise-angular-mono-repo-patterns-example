@@ -18,3 +18,9 @@ ng add @nrwl/angular
 ...add Angular core files to package.json
 
 Then after that, I used the Nx Console to add apps and libs
+
+## Visualizing the Dependency Graph
+
+```
+npm run dep-graph
+```

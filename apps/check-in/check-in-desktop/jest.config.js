@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'check-in-check-in-desktop',
+  name: 'check-in-desktop',
   preset: '../../../jest.config.js',
   coverageDirectory: '../../../coverage/apps/check-in/check-in-desktop',
   snapshotSerializers: [

@@ -1,7 +1,7 @@
 module.exports = {
-  name: 'check-in-mobile',
+  name: 'booking-feature-shell',
   preset: '../../../jest.config.js',
-  coverageDirectory: '../../../coverage/apps/check-in/check-in-mobile',
+  coverageDirectory: '../../../coverage/libs/booking/booking-feature-shell',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',
