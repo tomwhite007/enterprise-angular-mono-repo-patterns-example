@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import {
+  BookingFeatureFlightSearchModule,
+  FlightSearchComponent
+} from '@patterns-example/booking/feature-flight-search';
 
 @NgModule({
   imports: [
     CommonModule,
+    BookingFeatureFlightSearchModule,
 
     RouterModule.forChild([
       {
-        path: 'booking-feature-flight-search',
-        loadChildren: () =>
-          import('@patterns-example/booking/feature-flight-search').then(
-            module => module.BookingFeatureFlightSearchModule
-          )
+        path: '',
+        component: FlightSearchComponent,
+        pathMatch: 'full'
       },
       {
         path: 'booking-feature-passenger-info',

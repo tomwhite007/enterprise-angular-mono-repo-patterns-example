@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { FlightSearchComponent } from './flight-search/flight-search.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-
-    RouterModule.forChild([
-      /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
-    ])
-  ]
+  imports: [CommonModule],
+  declarations: [FlightSearchComponent],
+  exports: [FlightSearchComponent]
 })
 export class BookingFeatureFlightSearchModule {}
