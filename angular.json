@@ -617,6 +617,41 @@
           "style": "scss"
         }
       }
+    },
+    "booking-feature-passenger-info": {
+      "projectType": "library",
+      "root": "libs/booking/feature-passenger-info",
+      "sourceRoot": "libs/booking/feature-passenger-info/src",
+      "prefix": "booking",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/feature-passenger-info/tsconfig.lib.json",
+              "libs/booking/feature-passenger-info/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/booking/feature-passenger-info/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/feature-passenger-info/jest.config.js",
+            "tsConfig": "libs/booking/feature-passenger-info/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/booking/feature-passenger-info/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
