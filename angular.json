@@ -520,7 +520,7 @@
       "projectType": "library",
       "root": "libs/booking/feature-shell",
       "sourceRoot": "libs/booking/feature-shell/src",
-      "prefix": "booking",
+      "prefix": "shell",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -552,7 +552,7 @@
       "projectType": "library",
       "root": "libs/check-in/check-in-feature-shell",
       "sourceRoot": "libs/check-in/check-in-feature-shell/src",
-      "prefix": "check-in",
+      "prefix": "shell",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -587,7 +587,7 @@
       "projectType": "library",
       "root": "libs/booking/feature-flight-search",
       "sourceRoot": "libs/booking/feature-flight-search/src",
-      "prefix": "booking",
+      "prefix": "search",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -622,7 +622,7 @@
       "projectType": "library",
       "root": "libs/booking/feature-passenger-info",
       "sourceRoot": "libs/booking/feature-passenger-info/src",
-      "prefix": "booking",
+      "prefix": "info",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -644,6 +644,41 @@
             "tsConfig": "libs/booking/feature-passenger-info/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/booking/feature-passenger-info/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "shared-seatmap-feature-seat-listing": {
+      "projectType": "library",
+      "root": "libs/shared/seatmap/feature-seat-listing",
+      "sourceRoot": "libs/shared/seatmap/feature-seat-listing/src",
+      "prefix": "seatmap",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/seatmap/feature-seat-listing/tsconfig.lib.json",
+              "libs/shared/seatmap/feature-seat-listing/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/seatmap/feature-seat-listing/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/seatmap/feature-seat-listing/jest.config.js",
+            "tsConfig": "libs/shared/seatmap/feature-seat-listing/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/seatmap/feature-seat-listing/src/test-setup.ts"
           }
         }
       },

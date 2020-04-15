@@ -20,6 +20,13 @@ import { RouterModule } from '@angular/router';
           import('@patterns-example/booking/feature-passenger-info').then(
             module => module.BookingFeaturePassengerInfoModule
           )
+      },
+      {
+        path: 'shared-seatmap-feature-seat-listing',
+        loadChildren: () =>
+          import('@patterns-example/shared/seatmap/feature-seat-listing').then(
+            module => module.SharedSeatmapFeatureSeatListingModule
+          )
       }
       /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
     ])

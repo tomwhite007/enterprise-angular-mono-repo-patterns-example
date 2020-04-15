@@ -27,6 +27,9 @@
       ],
       "@patterns-example/booking/feature-passenger-info": [
         "libs/booking/feature-passenger-info/src/index.ts"
+      ],
+      "@patterns-example/shared/seatmap/feature-seat-listing": [
+        "libs/shared/seatmap/feature-seat-listing/src/index.ts"
       ]
     }
   },
