@@ -7,15 +7,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
 
     RouterModule.forChild([
-      {
-        path: 'booking-feature-flight-search',
-        loadChildren: () =>
-          import('@patterns-example/booking/feature-flight-search').then(
-            module => module.BookingFeatureFlightSearchModule
-          )
-      }
       /* {path: '', pathMatch: 'full', component: InsertYourComponentHere} */
     ])
   ]
 })
-export class BookingFeatureShellModule {}
+export class BookingFeatureFlightSearchModule {}

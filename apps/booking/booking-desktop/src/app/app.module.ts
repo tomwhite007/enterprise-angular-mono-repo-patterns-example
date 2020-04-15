@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
         {
           path: 'booking-feature-shell',
           loadChildren: () =>
-            import('@patterns-example/booking/booking-feature-shell').then(
+            import('@patterns-example/booking/feature-shell').then(
               module => module.BookingFeatureShellModule
             )
         }

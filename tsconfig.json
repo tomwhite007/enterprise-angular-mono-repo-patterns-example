@@ -21,6 +21,9 @@
       ],
       "@patterns-example/check-in/check-in-feature-shell": [
         "libs/check-in/check-in-feature-shell/src/index.ts"
+      ],
+      "@patterns-example/booking/feature-flight-search": [
+        "libs/booking/feature-flight-search/src/index.ts"
       ]
     }
   },

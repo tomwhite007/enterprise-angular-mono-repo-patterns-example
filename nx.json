@@ -50,8 +50,11 @@
     "booking-feature-shell": {
       "tags": ["scope:booking", "type:feature"]
     },
-    "check-in-check-in-feature-shell": {
+    "check-in-feature-shell": {
       "tags": ["scope:check-in", "type:feature"]
+    },
+    "booking-feature-flight-search": {
+      "tags": ["scope:booking", "type:feature"]
     }
   }
 }

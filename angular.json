@@ -518,30 +518,27 @@
     },
     "booking-feature-shell": {
       "projectType": "library",
-      "root": "libs/booking/booking-feature-shell",
-      "sourceRoot": "libs/booking/booking-feature-shell/src",
+      "root": "libs/booking/feature-shell",
+      "sourceRoot": "libs/booking/feature-shell/src",
       "prefix": "booking",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "libs/booking/booking-feature-shell/tsconfig.lib.json",
-              "libs/booking/booking-feature-shell/tsconfig.spec.json"
+              "libs/booking/feature-shell/tsconfig.lib.json",
+              "libs/booking/feature-shell/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/booking/booking-feature-shell/**"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/booking/feature-shell/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
-            "jestConfig": "libs/booking/booking-feature-shell/jest.config.js",
-            "tsConfig": "libs/booking/booking-feature-shell/tsconfig.spec.json",
+            "jestConfig": "libs/booking/feature-shell/jest.config.js",
+            "tsConfig": "libs/booking/feature-shell/tsconfig.spec.json",
             "passWithNoTests": true,
-            "setupFile": "libs/booking/booking-feature-shell/src/test-setup.ts"
+            "setupFile": "libs/booking/feature-shell/src/test-setup.ts"
           }
         }
       },
@@ -551,7 +548,7 @@
         }
       }
     },
-    "check-in-check-in-feature-shell": {
+    "check-in-feature-shell": {
       "projectType": "library",
       "root": "libs/check-in/check-in-feature-shell",
       "sourceRoot": "libs/check-in/check-in-feature-shell/src",
@@ -577,6 +574,41 @@
             "tsConfig": "libs/check-in/check-in-feature-shell/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/check-in/check-in-feature-shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "booking-feature-flight-search": {
+      "projectType": "library",
+      "root": "libs/booking/feature-flight-search",
+      "sourceRoot": "libs/booking/feature-flight-search/src",
+      "prefix": "booking",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/feature-flight-search/tsconfig.lib.json",
+              "libs/booking/feature-flight-search/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/booking/feature-flight-search/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/feature-flight-search/jest.config.js",
+            "tsConfig": "libs/booking/feature-flight-search/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/booking/feature-flight-search/src/test-setup.ts"
           }
         }
       },
