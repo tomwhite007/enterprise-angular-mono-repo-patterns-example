@@ -8,7 +8,18 @@ import { RouterModule } from '@angular/router';
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabled' })
+    RouterModule.forRoot(
+      [
+        {
+          path: 'check-in-feature-shell',
+          loadChildren: () =>
+            import('@patterns-example/check-in/check-in-feature-shell').then(
+              module => module.CheckInFeatureShellModule
+            )
+        }
+      ],
+      { initialNavigation: 'enabled' }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]

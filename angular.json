@@ -550,6 +550,41 @@
           "style": "scss"
         }
       }
+    },
+    "check-in-check-in-feature-shell": {
+      "projectType": "library",
+      "root": "libs/check-in/check-in-feature-shell",
+      "sourceRoot": "libs/check-in/check-in-feature-shell/src",
+      "prefix": "check-in",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/check-in/check-in-feature-shell/tsconfig.lib.json",
+              "libs/check-in/check-in-feature-shell/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/check-in/check-in-feature-shell/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/check-in/check-in-feature-shell/jest.config.js",
+            "tsConfig": "libs/check-in/check-in-feature-shell/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/check-in/check-in-feature-shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

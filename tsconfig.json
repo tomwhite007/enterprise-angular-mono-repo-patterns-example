@@ -18,6 +18,9 @@
     "paths": {
       "@patterns-example/booking/feature-shell": [
         "libs/booking/feature-shell/src/index.ts"
+      ],
+      "@patterns-example/check-in/check-in-feature-shell": [
+        "libs/check-in/check-in-feature-shell/src/index.ts"
       ]
     }
   },

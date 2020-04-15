@@ -49,6 +49,9 @@
     },
     "booking-feature-shell": {
       "tags": ["scope:booking", "type:feature"]
+    },
+    "check-in-check-in-feature-shell": {
+      "tags": ["scope:check-in", "type:feature"]
     }
   }
 }
