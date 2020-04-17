@@ -33,6 +33,12 @@
       ],
       "@patterns-example/shared/seatmap/feature-seatmap": [
         "libs/shared/seatmap/feature-seatmap/src/index.ts"
+      ],
+      "@patterns-example/shared/seatmap/data-access": [
+        "libs/shared/seatmap/data-access/src/index.ts"
+      ],
+      "@patterns-example/shared/data-access": [
+        "libs/shared/data-access/src/index.ts"
       ]
     }
   },

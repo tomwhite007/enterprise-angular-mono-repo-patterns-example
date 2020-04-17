@@ -64,6 +64,12 @@
     },
     "shared-seatmap-feature-seatmap": {
       "tags": ["scope:shared", "type:feature"]
+    },
+    "shared-seatmap-data-access": {
+      "tags": ["scope:shared", "type:data-access"]
+    },
+    "shared-data-access": {
+      "tags": ["scope:shared", "type:data-access"]
     }
   }
 }
