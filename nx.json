@@ -61,6 +61,9 @@
     },
     "shared-seatmap-feature-seat-listing": {
       "tags": ["scope:shared", "type:feature"]
+    },
+    "shared-seatmap-feature-seatmap": {
+      "tags": ["scope:shared", "type:feature"]
     }
   }
 }

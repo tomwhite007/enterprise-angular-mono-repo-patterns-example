@@ -687,6 +687,41 @@
           "style": "scss"
         }
       }
+    },
+    "shared-seatmap-feature-seatmap": {
+      "projectType": "library",
+      "root": "libs/shared/seatmap/feature-seatmap",
+      "sourceRoot": "libs/shared/seatmap/feature-seatmap/src",
+      "prefix": "seatmap",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/seatmap/feature-seatmap/tsconfig.lib.json",
+              "libs/shared/seatmap/feature-seatmap/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/shared/seatmap/feature-seatmap/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/seatmap/feature-seatmap/jest.config.js",
+            "tsConfig": "libs/shared/seatmap/feature-seatmap/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/shared/seatmap/feature-seatmap/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

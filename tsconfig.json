@@ -30,6 +30,9 @@
       ],
       "@patterns-example/shared/seatmap/feature-seat-listing": [
         "libs/shared/seatmap/feature-seat-listing/src/index.ts"
+      ],
+      "@patterns-example/shared/seatmap/feature-seatmap": [
+        "libs/shared/seatmap/feature-seatmap/src/index.ts"
       ]
     }
   },
