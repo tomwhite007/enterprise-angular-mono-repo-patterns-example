@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, PreloadAllModules } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent],
@@ -11,14 +11,14 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot(
       [
         {
-          path: 'check-in-feature-shell',
+          path: '',
           loadChildren: () =>
             import('@patterns-example/check-in/check-in-feature-shell').then(
               module => module.CheckInFeatureShellModule
             )
         }
       ],
-      { initialNavigation: 'enabled' }
+      { initialNavigation: 'enabled', preloadingStrategy: PreloadAllModules }
     )
   ],
   providers: [],

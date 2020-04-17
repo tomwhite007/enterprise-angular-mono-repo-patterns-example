@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, PreloadAllModules } from '@angular/router';
 
 @NgModule({
   declarations: [AppComponent],
@@ -11,14 +11,14 @@ import { RouterModule } from '@angular/router';
     RouterModule.forRoot(
       [
         {
-          path: 'booking-feature-shell',
+          path: '',
           loadChildren: () =>
             import('@patterns-example/booking/feature-shell').then(
               module => module.BookingFeatureShellModule
             )
         }
       ],
-      { initialNavigation: 'enabled' }
+      { initialNavigation: 'enabled', preloadingStrategy: PreloadAllModules }
     )
   ],
   providers: [],
