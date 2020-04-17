@@ -70,6 +70,12 @@
     },
     "shared-data-access": {
       "tags": ["scope:shared", "type:data-access"]
+    },
+    "check-in-data-access": {
+      "tags": ["scope:check-in", "type:data-access"]
+    },
+    "booking-data-access": {
+      "tags": ["scope:booking", "type:data-access"]
     }
   }
 }

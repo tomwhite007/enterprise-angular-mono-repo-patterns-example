@@ -5,11 +5,13 @@ import {
   BookingFeatureFlightSearchModule,
   FlightSearchComponent
 } from '@patterns-example/booking/feature-flight-search';
+import { BookingDataAccessModule } from '@patterns-example/booking/data-access';
 
 @NgModule({
   imports: [
     CommonModule,
     BookingFeatureFlightSearchModule,
+    BookingDataAccessModule,
 
     RouterModule.forChild([
       {

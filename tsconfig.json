@@ -39,6 +39,12 @@
       ],
       "@patterns-example/shared/data-access": [
         "libs/shared/data-access/src/index.ts"
+      ],
+      "@patterns-example/check-in/data-access": [
+        "libs/check-in/data-access/src/index.ts"
+      ],
+      "@patterns-example/booking/data-access": [
+        "libs/booking/data-access/src/index.ts"
       ]
     }
   },
