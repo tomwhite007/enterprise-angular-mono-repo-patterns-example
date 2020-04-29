@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'checkin-root',
+  selector: 'check-in-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

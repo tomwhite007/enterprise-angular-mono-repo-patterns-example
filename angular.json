@@ -265,7 +265,7 @@
       },
       "root": "apps/check-in/check-in-desktop",
       "sourceRoot": "apps/check-in/check-in-desktop/src",
-      "prefix": "checkin",
+      "prefix": "check-in",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -396,7 +396,7 @@
       },
       "root": "apps/check-in/check-in-mobile",
       "sourceRoot": "apps/check-in/check-in-mobile/src",
-      "prefix": "checkin",
+      "prefix": "check-in",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -587,7 +587,7 @@
       "projectType": "library",
       "root": "libs/booking/feature-flight-search",
       "sourceRoot": "libs/booking/feature-flight-search/src",
-      "prefix": "search",
+      "prefix": "booking",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -622,7 +622,7 @@
       "projectType": "library",
       "root": "libs/booking/feature-passenger-info",
       "sourceRoot": "libs/booking/feature-passenger-info/src",
-      "prefix": "info",
+      "prefix": "booking",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
