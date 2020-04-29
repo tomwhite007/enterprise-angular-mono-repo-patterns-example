@@ -60,8 +60,24 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "scope:shared",
+            "onlyDependOnLibsWithTags": ["scope:shared"]
+          },
+          {
+            "sourceTag": "scope:booking",
+            "onlyDependOnLibsWithTags": ["scope:booking", "scope:shared"]
+          },
+          {
+            "sourceTag": "type:util",
+            "onlyDependOnLibsWithTags": ["type:util"]
+          },
+          {
+            "sourceTag": "type:ui",
+            "onlyDependOnLibsWithTags": ["type:util"]
+          },
+          {
+            "sourceTag": "type:data-access",
+            "onlyDependOnLibsWithTags": ["type:util"]
           }
         ]
       }
