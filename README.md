@@ -9,7 +9,7 @@ built as an exercise to demonstrate how the tooling works.
 npx create-nx-workspace@latest
 ```
 
-...the selected 'Empty Workspace'
+...then selected 'Empty Workspace'
 
 ```
 ng add @nrwl/angular
