@@ -8,8 +8,8 @@ import { CheckInFeatureShellModule } from '@patterns-example/check-in/check-in-f
   imports: [
     CommonModule,
     SharedDataAccessModule,
-    CheckInDataAccessModule,
     CheckInFeatureShellModule,
+    CheckInDataAccessModule,
   ],
 })
 export class BookingDataAccessModule {}
