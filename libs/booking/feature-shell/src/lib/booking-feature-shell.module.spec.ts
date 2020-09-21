@@ -4,7 +4,7 @@ import { BookingFeatureShellModule } from './booking-feature-shell.module';
 describe('BookingFeatureShellModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [BookingFeatureShellModule]
+      imports: [BookingFeatureShellModule],
     }).compileComponents();
   }));
 

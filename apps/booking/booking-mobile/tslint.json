@@ -1,8 +1,8 @@
 {
   "extends": "../../../tslint.json",
   "rules": {
-    "directive-selector": [true, "attribute", "booking", "camelCase"],
-    "component-selector": [true, "element", "booking", "kebab-case"]
+    "directive-selector": [true, "attribute", "bookingMobile", "camelCase"],
+    "component-selector": [true, "element", "booking-mobile", "kebab-case"]
   },
   "linterOptions": {
     "exclude": ["!**/*"]

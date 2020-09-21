@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'check-in-desktop',
+  name: 'check-in-feature-shell',
   preset: '../../../jest.config.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -12,7 +12,7 @@ module.exports = {
       ],
     },
   },
-  coverageDirectory: '../../../coverage/apps/check-in/check-in-desktop',
+  coverageDirectory: '../../../coverage/libs/check-in/feature-shell',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

@@ -4,7 +4,7 @@ import { CheckInFeatureShellModule } from './check-in-feature-shell.module';
 describe('CheckInFeatureShellModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [CheckInFeatureShellModule]
+      imports: [CheckInFeatureShellModule],
     }).compileComponents();
   }));
 

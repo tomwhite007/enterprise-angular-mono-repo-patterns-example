@@ -13,15 +13,15 @@ import { RouterModule, PreloadAllModules } from '@angular/router';
         {
           path: '',
           loadChildren: () =>
-            import('@patterns-example/check-in/check-in-feature-shell').then(
-              module => module.CheckInFeatureShellModule
-            )
-        }
+            import('@patterns-example/check-in/feature-shell').then(
+              (module) => module.CheckInFeatureShellModule
+            ),
+        },
       ],
       { initialNavigation: 'enabled', preloadingStrategy: PreloadAllModules }
-    )
+    ),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -14,14 +14,14 @@ import { RouterModule, PreloadAllModules } from '@angular/router';
           path: '',
           loadChildren: () =>
             import('@patterns-example/booking/feature-shell').then(
-              module => module.BookingFeatureShellModule
-            )
-        }
+              (module) => module.BookingFeatureShellModule
+            ),
+        },
       ],
       { initialNavigation: 'enabled', preloadingStrategy: PreloadAllModules }
-    )
+    ),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

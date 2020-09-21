@@ -3,6 +3,6 @@ import { CommonModule } from '@angular/common';
 import { SharedDataAccessModule } from '@patterns-example/shared/data-access';
 
 @NgModule({
-  imports: [CommonModule, SharedDataAccessModule]
+  imports: [CommonModule, SharedDataAccessModule],
 })
 export class BookingDataAccessModule {}
