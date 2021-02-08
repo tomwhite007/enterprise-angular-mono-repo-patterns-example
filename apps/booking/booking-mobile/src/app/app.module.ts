@@ -18,7 +18,7 @@ import { RouterModule, PreloadAllModules } from '@angular/router';
             )
         }
       ],
-      { initialNavigation: 'enabled', preloadingStrategy: PreloadAllModules }
+      { initialNavigation: 'enabled', preloadingStrategy: PreloadAllModules, relativeLinkResolution: 'legacy' }
     )
   ],
   providers: [],
