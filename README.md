@@ -1,6 +1,6 @@
 # enterprise-angular-mono-repo-patterns-example
 
-This workspace is a composite copy of the examples in the book, Enterprise Angular Monorepo Patterns from Nrwl,
+This workspace is a composite copy of the examples in the book, [Enterprise Angular Monorepo Patterns](https://go.nrwl.io/angular-enterprise-monorepo-patterns-new-book) from Nrwl,
 built as an exercise to demonstrate how the tooling works.
 
 ## Background
